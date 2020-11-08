@@ -1,0 +1,4 @@
+cypress/
+example/
+.cache/
+node_modules/

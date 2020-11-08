@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist;rollup -c ./rollup.config.js;tsc",
     "format": "prettier './**/*.{ts,html}' --write"
   },
   "dependencies": {
@@ -12,9 +12,15 @@
   },
   "devDependencies": {
     "@elevenback/prettier-config": "^0.1.1",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-typescript": "^6.1.0",
     "cypress": "^5.5.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.2",
+    "rollup": "^2.33.1",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-minify-html-literals": "^1.2.5",
+    "rollup-plugin-terser": "^7.0.2",
     "typescript": "^4.0.5"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "es2015",
+    "declaration": false,
+    "outDir": "./dist/components/",
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "example",
+    "src/index.ts",
+    "src/widget.ts",
+  ]
+}
