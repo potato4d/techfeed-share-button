@@ -16,4 +16,4 @@ jobs:
           yarn
           yarn build
           yarn parcel build ./example/index.html
-          yarn start-server-and-test serve:test http://localhost:3000 test:cypress
+          yarn test
