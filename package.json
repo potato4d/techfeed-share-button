@@ -1,5 +1,6 @@
 {
   "name": "techfeed-share-button",
+  "description": "Social share button for TechFeed",
   "version": "0.2.0",
   "main": "./dist/tsc/index.js",
   "module": "./dist/esm/index.js",
