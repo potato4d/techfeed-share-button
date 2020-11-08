@@ -42,7 +42,11 @@ export class TechFeedButton extends LitElement {
 
   render() {
     if (!this.shareUrl) {
-      console.warn(`TechFeed Button Error: Invalid url ({ url: ${JSON.stringify(this.url)} })`)
+      console.warn(
+        `TechFeed Button Error: Invalid url ({ url: ${JSON.stringify(
+          this.url
+        )} })`
+      )
       return ``
     }
 

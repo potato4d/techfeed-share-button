@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      code {
+        padding: 4px 8px;
+        background: #e5e5e5;
+        border: solid 1px #999;
+        border-radius: 2px;
+      }
+      dd {
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 32px;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    code {
-      padding: 4px 8px;
-      background: #e5e5e5;
-      border: solid 1px #999;
-      border-radius: 2px;
-    }
-    dd {
-      margin-left: 0;
-      padding-left: 0;
-      margin-bottom: 32px;
-    }
-  </style>
-</head>
+  <body>
+    <dl>
+      <dt>url: <code id="xss-code">'javascript:alert(1);'</code></dt>
+      <dd>
+        <techfeed-button
+          id="xss-element"
+          url="javascript:alert(1);"
+        ></techfeed-button>
+      </dd>
+      <dt>url: <code id="blank-code">undefined</code></dt>
+      <dd>
+        <techfeed-button id="blank-element"></techfeed-button>
+      </dd>
+      <dt>url: <code id="valid-code">'https://example.com'</code></dt>
+      <dd>
+        <techfeed-button
+          id="valid-element"
+          url="https://example.com"
+        ></techfeed-button>
+      </dd>
+    </dl>
 
-<body>
-  <dl>
-    <dt>url: <code>'javascript:alert(1);'</code></dt>
-    <dd>
-      <techfeed-button url="javascript:alert(1);"></techfeed-button>
-    </dd>
-    <dt>url: <code>undefined</code></dt>
-    <dd>
-      <techfeed-button></techfeed-button>
-    </dd>
-    <dt>url: <code>'https://example.com'</code></dt>
-    <dd>
-      <techfeed-button url="https://example.com"></techfeed-button>
-    </dd>
-  </dl>
-
-  <div>
-  </div>
-  <script src="./main.ts"></script>
-</body>
-
+    <div></div>
+    <script src="./main.ts"></script>
+  </body>
 </html>
