@@ -2,12 +2,13 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "module": "es2015",
-    "moduleResolution": "node",
-    "outDir": "./dist/esm/",
+    "declaration": false,
+    "outDir": "./dist/components/",
     "experimentalDecorators": true
   },
   "exclude": [
     "example",
-    "cypress"
+    "src/index.ts",
+    "src/widget.ts",
   ]
 }

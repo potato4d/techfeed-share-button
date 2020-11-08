@@ -13,7 +13,7 @@ export default [
     plugins: [
       minifyHTML(),
       typescript({
-        tsconfig: './tsconfig.esm.json'
+        tsconfig: './tsconfig.el.json'
       }),
       resolve(),
     ],
