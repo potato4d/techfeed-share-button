@@ -8,12 +8,12 @@ class TechFeedButton extends LitElement {
     return css`
       :root {
         width: 60px;
-        height: 20px;
+        height: 21px;
       }
 
       a {
         width: 60px;
-        height: 20px;
+        height: 21px;
 
         font-size: 10px;
         text-decoration: none;
