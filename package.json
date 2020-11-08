@@ -7,6 +7,9 @@
   "scripts": {
     "dev": "parcel ./example/index.html",
     "build": "rm -rf dist;rollup -c ./rollup.config.js;tsc;tsc --build tsconfig.esm.json",
+    "test": "start-server-and-test 'test:serve' 1234 'test:cypress'",
+    "test:serve": "http-server ./dist/ -c-1 --silent --port 1234",
+    "test:cypress": "cypress run",
     "format": "prettier './**/*.{ts,html}' --write"
   },
   "dependencies": {
@@ -17,12 +20,14 @@
     "@rollup/plugin-node-resolve": "^10.0.0",
     "@rollup/plugin-typescript": "^6.1.0",
     "cypress": "^5.5.0",
+    "http-server": "^0.12.3",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.2",
     "rollup": "^2.33.1",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-minify-html-literals": "^1.2.5",
     "rollup-plugin-terser": "^7.0.2",
+    "start-server-and-test": "^1.11.5",
     "typescript": "^4.0.5"
   }
 }

@@ -1,0 +1,19 @@
+name: example-quiet
+
+on: [push]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Run End-to-End Test
+        run: |
+          yarn
+          yarn build
+          yarn parcel build ./example/index.html
+          yarn start-server-and-test serve:test http://localhost:3000 test:cypress
