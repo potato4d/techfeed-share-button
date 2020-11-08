@@ -5,6 +5,7 @@
   "module": "./dist/esm/index.js",
   "license": "MIT",
   "scripts": {
+    "dev": "parcel ./example/index.html",
     "build": "rm -rf dist;rollup -c ./rollup.config.js;tsc;tsc --build tsconfig.esm.json",
     "format": "prettier './**/*.{ts,html}' --write"
   },
