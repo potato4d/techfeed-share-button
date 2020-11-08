@@ -1,0 +1,19 @@
+{
+  "name": "techfeed-share-button",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier './**/*.ts' --write"
+  },
+  "dependencies": {
+    "lit-element": "^2.4.0"
+  },
+  "devDependencies": {
+    "@elevenback/prettier-config": "^0.1.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  }
+}
