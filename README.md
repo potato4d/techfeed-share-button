@@ -4,6 +4,10 @@
 
 The social share button for TechFeed.
 
+## Live Demo
+
+[here](https://codesandbox.io/s/vibrant-wozniak-ddfjk)
+
 ## Usage
 
 ### Using the CDN version
@@ -11,6 +15,8 @@ The social share button for TechFeed.
 The CDN version of the TechFeed Button runs as an IIFE and allows you to put a button on your website in seconds by simply loading it.
 
 ```html
+<techfeed-button url="https://github.com/potato4d/techfeed-share-button"></techfeed-button>
+
 <script src="https://unpkg.com/techfeed-share-button@0.2.0/dist/web/widget.js"></script>
 ```
 
@@ -25,6 +31,10 @@ import defineComponent from 'techfeed-share-button'
 
 defineComponent() // The `window.customElements.register('techfeed-button', TechFeedButton)` wrapper
 ```
+
+## Tutorial
+
+- [Guide(Japanese)](https://d.potato4d.me/entry/20201208-techfeed-button/)
 
 ## LICENCE
 
