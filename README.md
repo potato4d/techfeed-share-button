@@ -1,6 +1,6 @@
 # TechFeed Share Button
 
-![build](https://github.com/potato4d/techfeed-share-button/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/potato4d/techfeed-share-button/branch/master/graph/badge.svg)](https://codecov.io/gh/potato4d/techfeed-share-button) ![Version](https://img.shields.io/npm/v/techfeed-share-button.svg?sanitize=true)
+![test](https://github.com/potato4d/techfeed-share-button/workflows/test/badge.svg) [![codecov](https://codecov.io/gh/potato4d/techfeed-share-button/branch/master/graph/badge.svg)](https://codecov.io/gh/potato4d/techfeed-share-button) ![Version](https://img.shields.io/npm/v/techfeed-share-button.svg?sanitize=true)
 
 The social share button for TechFeed.
 
